@@ -35,10 +35,12 @@ public class Filme {
 
     @Override
     public String toString() {
+        String textoRetornado = this.getNome() + ", " + this.getAno() + "\n" + this.getLocal();
+
         if (this.getHot()) {
-            return "🔥 " + this.getNome() + ", " + this.getAno() + "\n" + this.getLocal();
+            return "🔥 " + textoRetornado;
         }
-        return this.getNome() + ", " + this.getAno() + "\n" + this.getLocal();
+        return textoRetornado;
     }
 
     @Override
